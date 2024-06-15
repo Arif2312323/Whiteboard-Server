@@ -4,7 +4,7 @@ const { Server } = require("socket.io");
 const cors = require('cors');
 
 const app = express();
-const URL = 'http://localhost:3000'
+const URL = 'https://whiteboard-frontend-coral.vercel.app/'
 app.use(cors({origin: URL}))
 const httpServer = createServer(app);
 const io = new Server(httpServer, { cors: URL });
